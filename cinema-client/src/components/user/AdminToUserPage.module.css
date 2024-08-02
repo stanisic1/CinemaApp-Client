@@ -1,0 +1,178 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.table thead {
+  background-color: #f2f2f2;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table th {
+  background-color: rgb(177, 72, 121);
+  color: white;
+  font-weight: bold;
+}
+
+.table td {
+  background-color: #fff;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .table,
+  .thead,
+  .tbody,
+  .th,
+  .td,
+  .tr {
+    display: block;
+  }
+
+  .th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .tr {
+    margin: 0 0 1rem 0;
+  }
+
+  .td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  .td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #d4bcbc;
+}
+
+.userInfo h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.userInfo p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.infoContainer {
+  flex: 1;
+  padding: 10px;
+}
+
+.roleForm {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-left: 1px solid #ccc;
+}
+
+.roleForm h3 {
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.roleForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.roleForm input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.roleForm button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #c7166f;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.roleForm button:hover {
+  background-color: #0056b3;
+}
+
+.headingContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: rgb(179, 53, 78);
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  background-color: rgb(194, 90, 90);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

@@ -1,0 +1,55 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #a78d8d;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #555;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.container .price {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.link {
+  color: #1509af9f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
