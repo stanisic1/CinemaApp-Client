@@ -6,6 +6,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.movies-heading {
+  animation: moveInAbove 1.2s ease-in;
+}
 .movies-table {
   width: 100%;
   border-collapse: collapse;
@@ -163,3 +166,16 @@ h3 {
   align-items: center;
   justify-content: center;
 }
+
+@keyframes moveInAbove {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+

@@ -388,8 +388,9 @@ const ProjectionsTable = () => {
           </div>
         </div>
       </div>
-
-      <h1>Projections</h1>
+      <div className={classes.heading}>
+        <h1>Projections</h1>
+      </div>
       <div className={classes.tableContainer}>
         <table className={classes.table}>
           <thead>

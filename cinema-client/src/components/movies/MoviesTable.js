@@ -274,7 +274,9 @@ const MoviesTable = () => {
         <button onClick={() => handleSortChange("year")}>Year</button>
       </div>
       {error && <div className={classes.error}>Error: {error}</div>}
-      <h1>Movies</h1>
+      <div className={classes["movies-heading"]}>
+        <h1>Movies</h1>
+      </div>
       <table className={classes["movies-table"]}>
         <thead>
           <tr>

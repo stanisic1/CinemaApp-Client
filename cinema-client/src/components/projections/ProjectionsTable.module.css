@@ -147,6 +147,10 @@
   font-size: 40px;
 }
 
+.heading {
+  animation: moveInAbove 1.2s ease-in;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -269,7 +273,7 @@
   color: #155724;
   border-radius: 4px;
   margin-bottom: 20px;
-  justify-content: space-between; /* Ensure spacing between the message and the close button */
+  justify-content: space-between; 
 }
 
 
@@ -321,4 +325,16 @@
 .pagination button.activePage {
   background-color: #0056b3;
   font-weight: bold;
+}
+
+@keyframes moveInAbove {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
