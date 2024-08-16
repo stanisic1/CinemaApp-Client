@@ -7,7 +7,7 @@
 }
 
 .movies-heading {
-  animation: moveInAbove 1.2s ease-in;
+  animation: moveInAbove .6s ease-in;
 }
 .movies-table {
   width: 100%;
